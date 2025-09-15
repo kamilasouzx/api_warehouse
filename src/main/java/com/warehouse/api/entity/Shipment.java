@@ -25,9 +25,10 @@ public class Shipment {
 
     public Shipment() {
     }
-    public Shipment(UUID id, String status) {
+    public Shipment(UUID id, String status,  Set<Product> products) {
         this.id = id;
         this.status = status;
+        this.products = products;
     }
 
     public UUID getId() {

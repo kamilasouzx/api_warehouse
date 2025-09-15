@@ -21,9 +21,10 @@ public class Section {
 
     public Section(){
     }
-    public Section(UUID id, String codigo) {
+    public Section(UUID id, String codigo,  Warehouse warehouse) {
         this.id = id;
         this.codigo = codigo;
+        this.warehouse = warehouse;
     }
 
     public UUID getId() {
@@ -49,4 +50,5 @@ public class Section {
     public void setWarehouse(Warehouse warehouse) {
         this.warehouse = warehouse;
     }
+
 }

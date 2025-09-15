@@ -27,9 +27,11 @@ public class Warehouse {
 
     public Warehouse() {
     }
-    public Warehouse(UUID id, String nome) {
+    public Warehouse(UUID id, String nome,  Address address, Set<Section> sections) {
         this.id = id;
         this.nome = nome;
+        this.address = address;
+        this.sections = sections;
     }
 
     public UUID getId() {

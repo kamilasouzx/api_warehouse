@@ -26,6 +26,7 @@ public class Address {
         this.id = id;
         this.rua = rua;
         this.cidade = cidade;
+        this.warehouse = warehouse;
     }
 
     public UUID getId() {

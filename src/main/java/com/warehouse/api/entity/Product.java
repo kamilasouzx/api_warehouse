@@ -22,10 +22,11 @@ public class Product {
 
     public Product(){
     }
-    public Product(UUID id, String sku, String nome) {
+    public Product(UUID id, String sku, String nome, Set<Shipment> shipments) {
         this.id = id;
         this.sku = sku;
         this.nome = nome;
+        this.shipments = shipments;
     }
 
     public UUID getId() {
@@ -59,4 +60,5 @@ public class Product {
     public void setShipments(Set<Shipment> shipments) {
         this.shipments = shipments;
     }
+
 }
