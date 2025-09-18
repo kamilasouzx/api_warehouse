@@ -19,7 +19,6 @@ public class WarehouseCreateDTO {
         this.sections = sections;
         this.address = address;
     }
-
     public String getNome() {
         return nome;
     }
