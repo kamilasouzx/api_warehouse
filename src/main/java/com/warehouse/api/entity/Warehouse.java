@@ -17,7 +17,7 @@ public class Warehouse {
     private String nome;
 
     //relacionamento
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne
     @JoinColumn(name = "address_id", referencedColumnName = "id")
     private Address address;
 
