@@ -56,12 +56,14 @@ public class ShipmentService {
     public ShipmentCreateDTO convertToDTO(Shipment shipment) {
         ShipmentCreateDTO shipmentCreateDTO = new ShipmentCreateDTO();
         shipmentCreateDTO.setStatus(shipment.getStatus());
+        shipmentCreateDTO.setProducts(shipment.getProducts());
 
         return shipmentCreateDTO;
     }
 
     public Shipment convertToEntity(ShipmentCreateDTO shipmentCreateDTO) {
         Shipment shipment = new Shipment();
+        shipment.setProducts(shipmentCreateDTO.getProducts());
         shipment.setStatus(shipmentCreateDTO.getStatus());
         return shipment;
     }

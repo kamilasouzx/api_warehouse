@@ -56,12 +56,14 @@ public class WarehouseService {
     public WarehouseCreateDTO convertToDTO(Warehouse warehouse) {
         WarehouseCreateDTO warehouseCreateDTO = new WarehouseCreateDTO();
         warehouseCreateDTO.setNome(warehouse.getNome());
+        warehouseCreateDTO.setSections(warehouse.getSections());
         return warehouseCreateDTO;
     }
 
     public Warehouse convertToEntity(WarehouseCreateDTO warehouseCreateDTO) {
         Warehouse warehouse = new Warehouse();
         warehouse.setNome(warehouseCreateDTO.getNome());
+        warehouse.setSections(warehouseCreateDTO.getSections());
         return warehouse;
     }
 }
